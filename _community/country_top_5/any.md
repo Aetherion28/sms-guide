@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Country Leaderboard</title>
+<style>
+  table { border-collapse: collapse; width: 100%; margin-top: 20px; }
+  th, td { border: 1px solid #ccc; padding: 8px; text-align: left; }
+  th { background-color: #f0f0f0; }
+</style>
+</head>
+<body>
+
+<h1>Country Leaderboard</h1>
+<table id="leaderboard">
+  <thead>
+    <tr>
+      <th>Country</th>
+      <th>First</th>
+      <th>Second</th>
+      <th>Third</th>
+      <th>Fourth</th>
+      <th>Fifth</th>
+    </tr>
+  </thead>
+  <tbody></tbody>
+</table>
+
+<script>
+const API_URL = "https://www.speedrun.com/api/v2/GetGameLeaderboard2?_r=eyJwYXJhbXMiOnsiY2F0ZWdvcnlJZCI6Im4yeTNyOGRvIiwiZW11bGF0b3IiOjEsImdhbWVJZCI6InYxcHhqejY4Iiwib2Jzb2xldGUiOjAsInBsYXRmb3JtSWRzIjpbXSwicmVnaW9uSWRzIjpbXSwidGltZXIiOjAsInZlcmlmaWVkIjoxLCJ2YWx1ZXMiOlt7InZhcmlhYmxlSWQiOiJqODQ1bWQ0biIsInZhbHVlSWRzIjpbImdxN29uMHZsIl19LHsidmFyaWFibGVJZCI6InlscXhnejc4IiwidmFsdWVJZHMiOlsiMWduNHJ6OGwiXX1dLCJ2aWRlbyI6MH0sInBhZ2UiOjEsInZhcmyI6MTc3MTY0Mzg5N30";
+
+async function fetchLeaderboardPage(page = 1) {
+  try {
+    const url = new URL(API_URL);
+    url.searchParams.set('page', page);
+    const res = await fetch(url);
+    const data = await res.json();
+    if (!data.playerList) return [];
+    return data.playerList;
+  } catch (err) {
+    console.error("Error fetching page", page, err);
+    return [];
+  }
+}
+
+async function fetchAllPlayers() {
+  let allPlayers = [];
+  const MAX_PAGE = 11; // limit to 1100 players
+  for (let page = 1; page <= MAX_PAGE; page++) {
+    const players = await fetchLeaderboardPage(page);
+    if (!players.length) break; // stop early if empty
+    allPlayers = allPlayers.concat(players);
+  }
+  return allPlayers;
+}
+
+// Convert country code to full country name
+function getCountryName(code) {
+  try {
+    // Extract the country part before '/' if present
+    const countryCode = code.split('/')[0];
+    // Use Intl.DisplayNames for all countries
+    const regionNames = new Intl.DisplayNames(['en'], {type: 'region'});
+    return regionNames.of(countryCode.toUpperCase()) || countryCode;
+  } catch {
+    return code;
+  }
+}
+
+function buildLeaderboardTable(players) {
+  // Group by country
+  const countries = {};
+  players.forEach(player => {
+    if (!player.areaId) return; // skip anonymous/banned
+    const country = getCountryName(player.areaId);
+    if (!countries[country]) countries[country] = [];
+    countries[country].push(player.name);
+  });
+
+  // Build table
+  const tbody = document.querySelector("#leaderboard tbody");
+  tbody.innerHTML = "";
+
+  Object.entries(countries).forEach(([country, names]) => {
+    const row = document.createElement("tr");
+    row.innerHTML = `<td>${country}</td>` +
+      names.slice(0,5).map(n => `<td>${n}</td>`).join('');
+    tbody.appendChild(row);
+  });
+}
+
+async function main() {
+  const players = await fetchAllPlayers();
+  buildLeaderboardTable(players);
+}
+
+main();
+</script>
+
+</body>
+</html>
