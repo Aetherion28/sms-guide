@@ -1,17 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<title>Country Leaderboard</title>
-<style>
-  table { border-collapse: collapse; width: 100%; margin-top: 20px; }
-  th, td { border: 1px solid #ccc; padding: 8px; text-align: left; }
-  th { background-color: #f0f0f0; }
-</style>
-</head>
-<body>
+# Country Leaderboard
 
-<h1>Country Leaderboard</h1>
+This leaderboard shows the top players grouped by country (first 5 per country).
+
 <table id="leaderboard">
   <thead>
     <tr>
@@ -45,21 +35,18 @@ async function fetchLeaderboardPage(page = 1) {
 
 async function fetchAllPlayers() {
   let allPlayers = [];
-  const MAX_PAGE = 11; // limit to 1100 players
+  const MAX_PAGE = 11;
   for (let page = 1; page <= MAX_PAGE; page++) {
     const players = await fetchLeaderboardPage(page);
-    if (!players.length) break; // stop early if empty
+    if (!players.length) break;
     allPlayers = allPlayers.concat(players);
   }
   return allPlayers;
 }
 
-// Convert country code to full country name
 function getCountryName(code) {
   try {
-    // Extract the country part before '/' if present
     const countryCode = code.split('/')[0];
-    // Use Intl.DisplayNames for all countries
     const regionNames = new Intl.DisplayNames(['en'], {type: 'region'});
     return regionNames.of(countryCode.toUpperCase()) || countryCode;
   } catch {
@@ -68,16 +55,14 @@ function getCountryName(code) {
 }
 
 function buildLeaderboardTable(players) {
-  // Group by country
   const countries = {};
   players.forEach(player => {
-    if (!player.areaId) return; // skip anonymous/banned
+    if (!player.areaId) return;
     const country = getCountryName(player.areaId);
     if (!countries[country]) countries[country] = [];
     countries[country].push(player.name);
   });
 
-  // Build table
   const tbody = document.querySelector("#leaderboard tbody");
   tbody.innerHTML = "";
 
@@ -96,6 +81,3 @@ async function main() {
 
 main();
 </script>
-
-</body>
-</html>
