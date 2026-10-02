@@ -50,7 +50,6 @@ These are typical RTA strats for when the A Chomp goes down the blue Normal path
 {% include yt.html id="Viy4GiOKJXw" %}  
 </details>   
 
-
 ### Forgotten Strat (1st is now B, 2nd is now A)   
 
 A strat lost to time and rediscovered to be faster, you go left first and trigger Chomp B first instead of Chomp A, if you see Chomp A go down the purple/red "Forgotten" path.  
@@ -112,6 +111,9 @@ Notice the "T-tetromino" shape on the wall. Aim at the rightmost part of that sh
 <img src="/sms-guide/assets/shines/pianta/episode1/downbad4.png">  
 
 <img src="/sms-guide/assets/shines/pianta/episode1/downbad5.png">  
+</details> 
+### Tail Bonk Launch
+{% include yt.html id="EXNpw5NoGM" %} 
 
-</details>   
+  
 
