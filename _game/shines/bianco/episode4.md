@@ -6,6 +6,7 @@ parent: Bianco Hills
 grand_parent: Shines
 ---
 # Bianco 4
+*( guide by **Zeldocto** )*  
 Bianco 4 is a red coin shine which requires collecting 8 red coins for the shine to spawn. You should be comfortable with hoverslides, (jump) dive rollouts, (buffered) spin jumps, sideflips, and triple jumps to have success with this shine. The intermediate and advanced strats for this level require knowledge of glitchy wall kick hovers (GWKHs) and insta-momentum spin jumps.
 ### Beginner
 #### Triple Jump Y-Turn
@@ -28,13 +29,14 @@ Bianco 4 is a red coin shine which requires collecting 8 red coins for the shine
 - Perform three jump dives off the rope, ground pounding before the 2nd and 3rd ground pound, until diving into the shine
 
 If you struggle with the insta-momentum spin after the 7th coin, you can hover to the roof without diving and perform a normal spin jump to the right.
-{% include yt.html id="9p2UxRJvDaU" %}
+{% include yt.html id="9p2UxRJvDaU" %}  
+*( video by **FoundYourGun** )*  
 ### Intermediate
 The Intermediate strat adds the grass-slide at the start of the level and a sideflip hover or GWKH at the end, which combined can save 1.0-1.5 seconds.
 #### Grass-Slide
 - At the start of the level, turn the camera slightly to the right, then hold up and hoverslide
 - Aim the hoverslide for the section of grass shown below, the last part which is not raised above the path;this section of grass:  
-<img src="https://i.imgur.com/2Qiq3bm.png" width=500>  
+<img src="/sms-guide/assets/shines/bianco/episode4/1.png" width=500>  
 - Slide onto the grass, then aim for the spot mentioned above where the grass wall dips back slightly
 - Buffer a hover and slide off the grass wall. Holding up-right, briefly hover back towards this spot on the grass
 - As Mario lands back on the grass, spin jump towards the white wall and hover onto it
@@ -45,6 +47,7 @@ The Intermediate strat adds the grass-slide at the start of the level and a side
 - Tap R for as short as possible to hover cancel your momentum
 As seen in the IL WR, easier to do than the GWKH but guesstimated to lose a frame.  
 {% include yt.html id="DwDl6T7ZiYg" %}
+*( video by **inkstar** )*  
 
 #### Glitchy Wall-Kick Hover
 - Upon landing on the middle section of the final building, spin jump towards the left pillar
@@ -53,12 +56,14 @@ As seen in the IL WR, easier to do than the GWKH but guesstimated to lose a fram
 - If you do a regular wall kick following an attempted GWKH, hover backwards onto the left pillar. Tap L while hovering to remove the y-cam storage that would otherwise occur when Mario lands.
 - Finish the level the same as the Beginner strat
 {% include yt.html id="nIY431bQL-w" %}
+*( video by **FoundYourGun** )*  
 ### Advanced
 The Advanced strat, known as Rope Speedspin, adds an insta-momentum spin jump off the final roof before the last rope, which can save up to 1.64 seconds, but comes with the risk of rolling out off the roof.
 #### Rope Speedspin
 - After collecting the 8th red coin, jump dive into the roof of the right pillar, aiming for this spot on the roof:  
-<img src="https://i.imgur.com/zpiuEbm.png" width=500>  
+<img src="/sms-guide/assets/shines/bianco/episode4/2.png" width=500>  
 - Perform an insta-momentum spin to the right, following the path of the rope
 - Briefly hover to exit the spin and fall onto the rope
 - Jump dive off the rope, ground pound just before landing back on it, then jump dive off it again into the shine
 {% include yt.html id="l4zSP-_iC2g" %}
+*( video by **FoundYourGun** )*  

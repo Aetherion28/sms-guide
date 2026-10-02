@@ -1,4 +1,5 @@
-# sms-guide
+# sms-guide [![Commit Activity](https://img.shields.io/github/commit-activity/t/smscommunity/sms-guide)](https://github.com/smscommunity/sms-guide) [![Discord](https://img.shields.io/discord/83214196182880256?color=%237289DA&logo=discord&logoColor=%23FFFFFF)](https://discord.gg/smscommunity)
+
 This github site is the home for the Super Mario Sunshine Speedrunning Community's WIP Wiki/Tutorial Hub.
 
 To get started contributing, create a fork, set up github pages on your fork, and start writing! To resubmit your changes back to the site, open a pull request.

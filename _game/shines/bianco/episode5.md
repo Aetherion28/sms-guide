@@ -6,6 +6,7 @@ parent: Bianco Hills
 grand_parent: Shines
 ---
 # Bianco 5
+*( guide by **schmittd11** )*  
 Bianco 5 is made up of two parts: the Entry and the Petey Fight. You should be comfortable with hoverslides, (jump) dive rollouts, spin jumps, sideflips, and triple jumps to have success with this shine.
 ## Entry
 
@@ -20,7 +21,8 @@ Bianco 5 is made up of two parts: the Entry and the Petey Fight. You should be c
 - Spam spray and dive into the water to waterslide, then rollout and allow a poink to attach to FLUDD
 - Backflip and shoot the poink to hit Petey
 
-{% include yt.html id="THguJsZpdGg" %}
+{% include yt.html id="uW7vd-S5W_g" %}  
+*( video by **Zeldocto** )*  
 #### Rope-Y
 *Intermediate*  
 This is roughly 2 seconds faster than the Log Triple strat
@@ -31,7 +33,8 @@ This is roughly 2 seconds faster than the Log Triple strat
 - Spin jump while spraying, then dive into the water on the white wall to waterslide
 - Finish the entry the same as the beginnger strat
 
-{% include yt.html id="XiRLGo_o8g8" %}
+{% include yt.html id="XiRLGo_o8g8" %}  
+*( video by **FoundYourGun** )*  
 #### Grass-Slide Triple Jump
 *Intermediate*  
 This is roughly 0.5 seconds faster than the Rope-Y strat
@@ -46,7 +49,7 @@ This is roughly 0.5 seconds faster than the Rope-Y strat
 {% include yt.html id="37h-M8R5CW8" %}
 ## Petey Fight
 Petey travels randomly between various nodes according to the map shown below. Petey always enters this area from Node N1.
-![Petey Map](https://i.imgur.com/w0pf6Vx.jpeg)
+![Petey Map](/sms-guide/assets/shines/bianco/episode5/1.jpeg)
 Petey will stop at blue nodes and continue flying through red nodes. When Petey first enters the graph at N1, he’s not coming from any of the represented nodes, so they’re all equally likely. The path indicated by a red double arrow is twice as likely as the others unless it’s the path Petey just came from, in which case the blue single arrow path is twice as likely as the others. Petey can take 774 unique patterns with the fastest being roughly 59 seconds faster than the slowest. An average pattern will lose roughly 14.3 seconds to the fastest.
 
 When Petey reaches a blue node, he will stop and fly in mid-air. At this point, he can be sprayed down so you can fill him with water then ground pound his belly. This must be done 3 times to defeat Petey. In addition to RNG from Petey's movement, Petey has a 60% chance of throwing a tornado each time he lands. Each tornado causes roughly 2.5 seconds of timeloss. After Petey throws a tornado, stand at his side so that he immediately turns to face you and opens his mouth. 
@@ -68,3 +71,4 @@ It takes 2 full spam sprays to fill Petey’s mouth (go for 3 to be safe in case
 ## 120 Shines 
 
 {% include yt.html id="eCZruyLJF9A" %}
+*( video by **Paperario** )*  

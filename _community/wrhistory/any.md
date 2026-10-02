@@ -142,6 +142,11 @@ Times above on Reset Timing, Times below on File Select timing
 **[1:12:41](https://www.youtube.com/watch?v=8qmNT9V60ps)** by inkstar on June 20, 2025  
 **[1:12:37](https://www.youtube.com/watch?v=c_Y4fmr3s60)** by inkstar on July 9, 2025  
 
+### 2026
+**[1:12:28](https://www.youtube.com/watch?v=jQFjKRJES5w)** by inkstar on January 29, 2026  
+**[1:12:27](https://www.youtube.com/watch?v=YnXb9uClDPg)** by inkstar on June 12, 2026  
+**[1:12:23](https://www.youtube.com/watch?v=F7kCKXn-WRg)** by inkstar on June 13, 2026  
+**[1:12:15](https://www.youtube.com/watch?v=GmHV1Ah6DdI)** by inkstar on August 10, 2026  
 
 ## ACE
 *GCN/Wii*  

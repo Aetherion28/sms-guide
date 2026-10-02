@@ -2,13 +2,13 @@
 layout: default
 title: IL Rules
 permalink: /info/il/rules/
-grand_parent: Misc General Info
 parent: Individual Levels
-nav_order: 2
+nav_order: 1
 ---
 
 # IL Rules
-These rules apply to the main tab, **ILs**; other tabs loosely abide by these but their rules are informal and have some deviations. Check example videos from the sheet you're interested in and ask in the Discord's #help channel if still unclear.
+These rules apply to the main tab, **ILs**; other tabs loosely abide by these but their rules are informal and have some deviations. Check example videos from the sheet you're interested in and ask in the Discord's #help channel if still unclear.  
+(Example: RTA Sheet permits starting from a save state)  
 
 Rules are non-italicised and *guidelines (on best practices) are italicised*.
 
@@ -16,7 +16,7 @@ Rules are non-italicised and *guidelines (on best practices) are italicised*.
     1. **On 60Hz** (if you are on PAL, ensure 60Hz is enabled by holding B during startup with intro skip practice code off; NTSC is always 60Hz).
     2. **Never using save-states to reset** (use the level select practice code and e.g. exit area).
 
-2. **Permitted practice codes**: all codes are generally allowed, but some levels have specific restrictions **posted in the note on the level's name**. Specific rules:
+2. **Permitted practice codes**: all codes on the [practice code website](https://gct.zint.ch/) are generally allowed, but some levels have specific restrictions **posted in the note on the level's name**. Specific rules:
     1. **Free Pause** is allowed but midair pausing is banned.
     2. **Fast Text (DPad Functions)** is allowed except for Pianta 5 Full, Secret and Reds.
     3. **Remove Saveboxes** is banned if it has an effect on gameplay.

@@ -12,4 +12,17 @@ Le Sandbird Is Born
 
 {% include yt.html id="zX6u_Z7hoEc" %}
 
-You can also opt to grab the coin on the neck later (after the 5th coin) as its slightly slower but safer.
+You can also opt to grab the coin on the neck later (after the 5th coin) as its slightly slower but safer.  
+
+
+░░░░░░░░▄▄▄▀▀▀▄▄███▄  
+░░░░░▄▀▀░░░░░░░▐░▀██▌  
+░░░▄▀░░░░▄▄███░▌▀▀░▀█  
+░░▄█░░▄▀▀▒▒▒▒▒▄▐░░░░█▌  
+░▐█▀▄▀▄▄▄▄▀▀▀▀▌░░░░░▐█▄  
+░▌▄▄▀▀░░░░░░░░▌░░░░▄███████▄  
+░░░░░░░░░░░░░▐░░░░▐███████████▄  
+░░░░░le░░░░░░░▐░░░░▐█████████████  
+░░░sandbird░░░░░▀▄░░░▐████████████  
+░░░░░░is░░░░░░░░▀▄▄██████████████  
+░░░░░born░░░░░░░░░░░░█▀██████ 

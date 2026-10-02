@@ -6,7 +6,8 @@ parent: Maneuvers
 grand_parent: Techniques
 nav_order: 2
 ---
-# Gelato Beach Skip *(GBS)* 
+# Gelato Beach Skip *(GBS)*  
+*( guide by **Zeldocto** )*  
 
 1. TOC
 {:toc}
@@ -16,20 +17,16 @@ nav_order: 2
 ### Beginner
 
 **Walk the Coconut** *(slow)*
-* Spray the coconut from the tree while on the ground, or climb up the tree and grab the coconut once you land on top of the leaves.
+* Climb up the tree and grab the coconut once you land on top of the leaves.
 * From here, you can simply walk the coconut to the hut.
 
 **Grounded Throw** *(fast)*
-* Spray the coconut from the tree while on the ground, or climb up the tree and grab the coconut once you land on top of the leaves. If you climb the tree, run off and land on the ground.
+* Climb up the tree and grab the coconut once you land on top of the leaves. Run off and land on the ground.
 * Line your camera up with the boardwalk and do a small jump and throw the coconut at the peak of your jump.
 
 ### Intermediate
 
-**Tree Spray**
-* As you approach the tree, you can either rollout and hold R to spray the coconut down during the rollout, or you can Y-Cam during the rollout and spray the coconut down this way. From here you grab the coconut and preform a grounded jump-throw
-
 **Late/Safe Tree Throw**
-* A slightly harder strat then tree spray, but easier than normal tree throw.
 * Optimal movement from spawn is jumpdive, small rollout, spinjump dive into waterslide. Rollout as you approach the tree (small rollout to maximize waterslide distance) and spinjump dive onto the tree.
 * Line up your camera as you climb the tree [like this](https://smscommunity.github.io/sms-guide/assets/techniques/maneuvers/gbs/gbs1.png).
 * You can also hold B as you climb the tree to buffer a grab and immediately grab the coconut. You can also time a ground pound to grab the coconut faster, but it is harder.
@@ -44,7 +41,7 @@ nav_order: 2
 [Video Example](https://www.youtube.com/watch?v=Ek3-OIBbd_s) of a near perfect tree throw  
 -*FoundYourGun*, 2023
 
-**RNG Spam Spray**
+**RNG Spam Spray "Orange Strat"**
 * Jump on the mirror silo on the right of the tree, jump off and spam spray the coconuts out of the tree. This has a large variable of RNG to it. It can result in the world record or can send the coconut flying into the water.
 
 [Video Example](https://www.youtube.com/watch?v=g_WcDRyC8fE) of a near perfect coconut RNG spam spray  
@@ -77,7 +74,7 @@ This is the original setup for the skip, and still used by many today.
 
 [Video Tutorial](https://www.youtube.com/watch?v=JPpC6Oh-h6s) *by shoutplenty*, 2023
 
-* As you approach the hut, do a small hop and throw the coconut at the peak of your jump. You want to jump when Mario reaches this point in the boardwalk.
+* As you approach the hut, do a full jump holding A and throw the coconut at the peak of your jump. You want to jump when Mario reaches [this point](https://smscommunity.github.io/sms-guide/assets/techniques/maneuvers/gbs/roofthrowvc.png) in the boardwalk.
 * Do a spin jump, and cancel it with a hover once you are at the same height as [this edge of the roof](https://smscommunity.github.io/sms-guide/assets/techniques/maneuvers/gbs/gbs3.png).
 * You will do an instant ledgegrab on this ledge of the roof. Do a short hop out of this, and dive and keep holding B to dive into and grab the coconut.
 * You can snap your camera with L either as you grab the coconut, or as you grab the ledge of the roof.  
@@ -94,10 +91,10 @@ This is the original setup for the skip, and still used by many today.
 * Now on the roof, you want to align Mario’s feet with [this position on the roof](https://smscommunity.github.io/sms-guide/assets/techniques/maneuvers/gbs/gbs4.png). It stands out via the dark horizontal roof texture.
 * Drop the coconut while the stick is neutral, then start holding forward to run into the coconut.
 * You will clip at the corner of the hut. Time a hover to hover up into the roof with Mario’s hat barely being visible.
-* The roof has a curve to it, needing you to reduce your speed to stay in line and not clip out of the bottom of the roof.
-* If you clip out above the roof, this means you had too much speed and needed to further reduce your speed by holding back more while hovering.
+* The roof has a curve to it, usually needing you to reduce your speed to stay in line and not clip out of the bottom or top of the roof.
+* If you clip out below the roof, this means you had too much speed and needed to further reduce your speed by holding back more while hovering.
 * This is a balancing act that you need to react to, that gets easier with practice.
-* One in the center of the roof, in the blender, release your hover and fall into the shine.
+* Once in the center of the roof, in the blender, release your hover and fall into the shine.
 
 
 ## *Other notable variants:*  
