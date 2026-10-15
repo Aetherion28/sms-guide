@@ -102,3 +102,27 @@ An RNG strat that loses about 2 seconds each time you go for it, but has the pot
 
 To go for it, you simply need to run under King Boo right when he starts to spin his slots after being sprayed on a Not Fruit❌ cycle. When you run under King Boo while his slots are spinning, you will get a roll once King Boo reappears. On its own this wouldn't be useful, but whenever King Boo reappears, his slots are set to random positions **regardless of the normal cycle rules**. So if this is done while the slots are spinning, you will get a cycle based on those random positions, with some possible leftover rotation if the slots don't have time to stop before King Boo reappears.
 </details>  
+
+<details markdown="block">
+  <summary markdown="span">
+    How it works in the game's code - Click for Details
+  </summary>
+{: .text-gamma}
+*( from the Super Mario Sunshine decompilation, `Enemy/bosstelesa.cpp` )*
+
+**Cancelling a cycle is a plain distance check.** King Boo carries an invisible collision actor (`TBossTelesaKillSmallEnemy`). Every frame it checks the distance from Mario to King Boo's position **ignoring height**. If it is under **300 units**, it calls `forceHide()`. There is no RNG and no timing window on the cancel itself: being within 300 units of King Boo's XZ position is enough, so it is fully consistent.
+
+`forceHide()` does nothing while King Boo is dying, already hiding (anim 4) or already appearing (anim 0). Otherwise it kills every spat-out item at once (`forceAllItemKill`, which also detaches anything Mario is holding), plays the escape/disappear sound, and jumps straight to his Hide state. From there he goes Hide → HideWait → Appear. HideWait only ends after **400 frames**, and only once Mario is **no longer** within 300 units, so standing under him keeps him down.
+
+**Why cancelling early doesn't count as a cycle.** The items are only created when King Boo reaches his spit state (`generateSlotItem`). Cancel before that and nothing was ever spawned, so nothing is tracked.
+
+**How the slot decides a normal cycle** (`TTelesaSlot::forceStopSlot`, called once at the end of the slot-start animation on the middle drum):
+- With probability `mSLSlotFirstHitCollectRate` (**10%**, raised to **90%** at 1 HP) the result is rigged: Fruit🍍, or coins instead if Mario has 3 HP or less.
+- Otherwise the result is whatever symbol the middle drum is already heading for, which depends on the spin speeds rolled in `rouletteStart`.
+- If that result equals the **previous** cycle's result it becomes the mixed-enemies result. This is the "no back-to-back" rule, and it applies to every symbol.
+- A coin result becomes the single-enemy result once the 3-coin-cycle budget is used up, or the mixed-enemies result if Mario has 6 HP or more.
+
+The four results are: Fruit🍍, coins, a single enemy type (Strollin' Stus, or Smolderin' Stus at 2 HP or less) and a mix of enemy types.
+
+**Why a cycle skip is 1/64.** When King Boo reappears, `randomReset()` snaps each of the three drums to one of **8 positions** (45° steps). The 8 positions hold the four results twice each, so each symbol is on 2 of the 8. The slot-started flag (`unk18C`) set when the spin began is never cleared by `forceHide()`, so the next time he is sprayed the game sees "slot started and no drum is rolling" and reads the result straight from those random positions, skipping `forceStopSlot` and its rules entirely. All three drums landing on fruit is (2/8)³ = **1/64**; all three on the same symbol of any kind is 1/16; the other 60/64 of the time the drums don't match (result −1), which spawns a **double** batch of bubbles (the only time bubbles come from the slot). Drums that still had spin speed keep turning from their random position until they stop, which is the "leftover rotation".
+</details>  
